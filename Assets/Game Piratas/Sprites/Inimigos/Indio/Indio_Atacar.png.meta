@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: d7350621d88e78040965ac68851d4841
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Indio_Atacar_0
+    21300002: Indio_Atacar_1
+    21300004: Indio_Atacar_2
+    21300006: Indio_Atacar_3
+    21300008: Indio_Atacar_4
+    21300010: Indio_Atacar_5
+    21300012: Indio_Atacar_6
+    21300014: Indio_Atacar_7
+    21300016: Indio_Atacar_8
+    21300018: Indio_Atacar_9
+    21300020: Indio_Atacar_10
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Indio_Atacar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 769
+        width: 350
+        height: 745
+      alignment: 9
+      pivot: {x: 0.8045581, y: 0.38469368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d05397c13b07c041a96c2f4a6cf2dc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_1
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 769
+        width: 362
+        height: 748
+      alignment: 9
+      pivot: {x: 0.7771409, y: 0.38850915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69146abb8b80e148a097143aec9e9ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_2
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 769
+        width: 362
+        height: 748
+      alignment: 9
+      pivot: {x: 0.778873, y: 0.3893475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed27c1df3cf7640bcebaf823a381af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_3
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 768
+        width: 360
+        height: 749
+      alignment: 9
+      pivot: {x: 0.77693886, y: 0.39116952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafae1774fad68541b9198d89e799a5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_4
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 362
+        height: 748
+      alignment: 9
+      pivot: {x: 0.77714074, y: 0.38431782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5eb05625dea5914c909b4084261d698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_5
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 769
+        width: 450
+        height: 732
+      alignment: 9
+      pivot: {x: 0.6950765, y: 0.39892128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040bcfac17fc0834bb995929ba8fbc7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 398
+        height: 742
+      alignment: 9
+      pivot: {x: 0.6859037, y: 0.38000214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409c6a98803db19428285ff5d9552173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_7
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 396
+        height: 750
+      alignment: 9
+      pivot: {x: 0.6741754, y: 0.3653974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190d6be4b3fd95648bc9c8981f2f652c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_8
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 0
+        width: 333
+        height: 756
+      alignment: 9
+      pivot: {x: 0.68641496, y: 0.36895385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad60cc4d2c98434a86338caa30958f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_9
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 0
+        width: 355
+        height: 757
+      alignment: 9
+      pivot: {x: 0.72608453, y: 0.3815516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faae9cd869e97944bbcd84717879d8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indio_Atacar_10
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 3
+        width: 350
+        height: 745
+      alignment: 9
+      pivot: {x: 0.80455846, y: 0.38637695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50840dacfc2ab0a47b3fead7a46424da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 50abe9853ba7bbf418138d13cea77363
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

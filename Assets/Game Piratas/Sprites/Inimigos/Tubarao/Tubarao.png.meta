@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 7e0d0bccdfa6ffd459c976258350a067
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tubarao_0
+    21300002: Tubarao_1
+    21300004: Tubarao_2
+    21300006: Tubarao_3
+    21300008: Tubarao_4
+    21300010: Tubarao_5
+    21300012: Tubarao_6
+    21300014: Tubarao_7
+    21300016: Tubarao_8
+    21300018: Tubarao_9
+    21300020: Tubarao_10
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tubarao_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 734
+        width: 637
+        height: 344
+      alignment: 9
+      pivot: {x: 0.7469684, y: 0.6461545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ce4efbcdd0c5545b7281d782d8953d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_1
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 718
+        width: 607
+        height: 347
+      alignment: 9
+      pivot: {x: 0.74047107, y: 0.6355432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ecdd107eb888f4abd56f337e1f90a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_2
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 692
+        width: 562
+        height: 348
+      alignment: 9
+      pivot: {x: 0.71643806, y: 0.6351538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0682ad1e5307ef04a868a74303fae9cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_3
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 698
+        width: 531
+        height: 352
+      alignment: 9
+      pivot: {x: 0.6985309, y: 0.6244028}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bea22de996926499cb6fe6fe781ed9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_4
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 703
+        width: 511
+        height: 347
+      alignment: 9
+      pivot: {x: 0.68725824, y: 0.6308692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4afdf8244fdc04b9d6449102c7a496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_5
+      rect:
+        serializedVersion: 2
+        x: 4746
+        y: 692
+        width: 485
+        height: 348
+      alignment: 9
+      pivot: {x: 0.6738885, y: 0.62583274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498de7f07af6cc54598ef50ed1be7b20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 631
+        height: 353
+      alignment: 9
+      pivot: {x: 0.74305725, y: 0.63300216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd8bd1dc755c9b4f902f5cce223a206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_7
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 13
+        width: 709
+        height: 454
+      alignment: 9
+      pivot: {x: 0.6409716, y: 0.6892535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac16f5304631cd94eadcc271748315c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_8
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 0
+        width: 761
+        height: 427
+      alignment: 9
+      pivot: {x: 0.62133306, y: 0.7455605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da391680c25648488cbf15c06815870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_9
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 43
+        width: 725
+        height: 383
+      alignment: 9
+      pivot: {x: 0.6338338, y: 0.7574265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33eaf908b31bd504f8176cdfe3e32e8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tubarao_10
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 49
+        width: 649
+        height: 362
+      alignment: 9
+      pivot: {x: 0.7049683, y: 0.70751256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ca83e9e9d9882408ee0b112ad4d86d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b8dd348a523fb3043b01278632ce2f27
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
