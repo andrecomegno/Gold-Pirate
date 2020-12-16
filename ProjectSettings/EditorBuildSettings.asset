@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Home/Home.unity
+    guid: 6ef7f0d708403cf4c9a32215eb05b693
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Creditos/Creditos.unity
+    guid: 3452d36056264e84d9dcd346e5c6cf16
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Um/MapaUm.unity
+    guid: 78843e662ef397e49a77407e3149e5b7
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Um/Episodio0.unity
+    guid: 010a439653897fd4b86a9bc95e57211c
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioI.unity
+    guid: 19a65c7114012174aabd86e741ae90bb
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioII.unity
+    guid: 44b46f6e934b26049ba9a76febcfe624
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioIII.unity
+    guid: 4c1f8f11b9fbe354b9025d2d2ba7d138
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioIV.unity
+    guid: ce43cc78a03feec4d83468811ca9d7bb
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioV.unity
+    guid: 007ac4f2bd7f8a24c8d772b7fa7ca78e
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioVI.unity
+    guid: 6e4dab6be0c31ef49ad12d5dafdad4a5
+  - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo Dois/EpisodioVII.unity
+    guid: 379afa7f87a80654491119058a431e83
+  - enabled: 0
+    path: 
+    guid: fe6e4eba0b543bd4ba8c2469c602c8ed
+  - enabled: 0
+    path: 
+    guid: fb04a058341defe45b7ca27f47a7b162
+  m_configObjects: {}
