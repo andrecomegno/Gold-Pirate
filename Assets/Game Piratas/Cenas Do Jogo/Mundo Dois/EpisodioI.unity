@@ -215,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &230256052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3599,6 +3599,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372678532}
     m_Modifications:
+    - target: {fileID: 485354039278924130, guid: 0625a33cf0fcca444b67952b04dcb90d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 485354039278924131, guid: 0625a33cf0fcca444b67952b04dcb90d,
         type: 3}
       propertyPath: m_RootOrder
@@ -3668,6 +3673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TotemPirata
+      objectReference: {fileID: 0}
+    - target: {fileID: 485354039278924135, guid: 0625a33cf0fcca444b67952b04dcb90d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0625a33cf0fcca444b67952b04dcb90d, type: 3}
