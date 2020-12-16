@@ -1,17 +1,33 @@
 fileFormatVersion: 2
 guid: d25881a96dad0744b966ef97e265d398
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Ep Aberto Press_1
-    21300002: Ep Aberto Press_2
-    21300004: Ep Aberto Press_3
-    21300006: Ep Aberto Press_4
-    21300008: Ep Aberto Press_4
-    21300010: Ep Aberto Press_5
-    21300012: Ep Aberto Press_0
-    21300014: Ep Aberto Press_6
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Ep Aberto Press_1
+  - first:
+      213: 21300002
+    second: Ep Aberto Press_2
+  - first:
+      213: 21300004
+    second: Ep Aberto Press_3
+  - first:
+      213: 21300006
+    second: Ep Aberto Press_4
+  - first:
+      213: 21300008
+    second: Ep Aberto Press_4
+  - first:
+      213: 21300010
+    second: Ep Aberto Press_5
+  - first:
+      213: 21300012
+    second: Ep Aberto Press_0
+  - first:
+      213: 21300014
+    second: Ep Aberto Press_6
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -31,6 +47,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -65,8 +82,10 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -77,7 +96,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -88,7 +108,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -99,6 +120,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,6 +140,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 265b8b598c19ed443a114e0795c49ada
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -138,6 +161,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 11827561bef7a7e4b943f8e3c0e29b80
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -158,6 +182,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a6c2260252da55243b0112e97dc6026c
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -178,6 +203,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: da3dcf0ebb7134d45a68999f038d35b3
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -198,6 +224,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f632c5d4d06c27045912fe0166461574
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -218,6 +245,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e377829440c2ed1468f781234737b6e7
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -238,6 +266,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9aea1b22fa9749b4ba260f3869b791fc
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -246,10 +275,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 6fbed17261669d4478357183931f1424
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
