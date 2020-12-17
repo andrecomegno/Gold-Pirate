@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum SelectInimigos
 {
-    Name, Tubarao, Esqueleto, Pirata, Lula, Macaco, Indio, Canhao
+    Name, Tubarao, Esqueleto, Pirata, Lula, Macaco, Indio, Canhao, Urubu
 }
 
 public enum InimigoCombate
@@ -322,7 +322,7 @@ public class InimigoControle : MonoBehaviour
                 // LINHA QUE ALTERA A VELOCIDADE QUANDO MUDADO DE DIREÇAO COM O FLIP
                 TubaNadar = -TubaNadar;
                 flip = !flip;
-//                Debug.Log("PingPong");
+//              Debug.Log("PingPong");
             }
 
             if (coll.CompareTag("Pirata"))
@@ -382,6 +382,14 @@ public class InimigoControle : MonoBehaviour
             if (coll.CompareTag("Pirata"))
             {
                 canhaoAtirar = true;
+            }
+        }
+
+        if(selectInimigos == SelectInimigos.Urubu)
+        {
+            if (coll.CompareTag("Pirata"))
+            {                
+                PirataControle.gm.JumpHead();
             }
         }
     }

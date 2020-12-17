@@ -12,6 +12,7 @@ public class PirataControle : MonoBehaviour {
     private CircleCollider2D circColider2d;
     private float speed = 15f;
     public float jump = 500f;
+    public float jumpHead = 800f;
     private float nadar = 200f;
     public bool facingRight;
     public LayerMask layerMask;
@@ -116,7 +117,6 @@ public class PirataControle : MonoBehaviour {
                 transform.localScale = thescale;
             }
         }
-
     }
 
     // LINHA DE COMANDO PARA O PULO E ANIMAÇAO EM SEGUIDA
@@ -132,7 +132,13 @@ public class PirataControle : MonoBehaviour {
         {
             rigi2d.AddForce(new Vector2(0, nadar));
         }
+    }
 
+    // LINHA DE COMANDO QUE ATIVA MATAR OS INIMIGOS, PULANDO NA CABEÇA
+    public void JumpHead()
+    {
+        rigi2d.AddForce(new Vector2(0, jumpHead));
+        //Debug.Log("JumpHead");
     }
 
     //LINHA DE COMANDO QUE VERIFICA SE O PERSONAGEM ESTA NO CHAO E TBM DENTRO DO OCEANO, ATIVANDO ASSIM A ANIMAÇAO NADAR
