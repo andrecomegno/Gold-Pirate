@@ -12,7 +12,6 @@ public class PirataControle : MonoBehaviour {
     private CircleCollider2D circColider2d;
     private float speed = 15f;
     public float jump = 500f;
-    public float jumpHead = 800f;
     private float nadar = 200f;
     public bool facingRight;
     public LayerMask layerMask;
@@ -135,9 +134,9 @@ public class PirataControle : MonoBehaviour {
     }
 
     // LINHA DE COMANDO QUE ATIVA MATAR OS INIMIGOS, PULANDO NA CABEÇA
-    public void JumpHead()
+    public void JumpHead(float jumpHead)
     {
-        rigi2d.AddForce(new Vector2(0, jumpHead));
+        rigi2d.velocity = new Vector2(0, jumpHead * Time.deltaTime);
         //Debug.Log("JumpHead");
     }
 

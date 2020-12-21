@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public enum SelectScenes{
-	intro, home, MapaUm
+	intro, home, Mapa_I, Mapa_II
 }
 
 public class MenuSelectScenes : MonoBehaviour
@@ -14,23 +14,35 @@ public class MenuSelectScenes : MonoBehaviour
     private string home = "Home";
     private string creditos = "Creditos";
 
-    //VARIAVEIS DO PRIMEIRO MAP DO JOGO
-    private string MapaUm = "MapaUm";
-    private string episodio0 = "Episodio0";
-    private string episodioI = "EpisodioI";
-    private string episodioII = "EpisodioII";
-    private string episodioIII = "EpisodioIII";
-    private string episodioIV = "EpisodioIV";
-    private string episodioV = "EpisodioV";
-    private string episodioVI = "EpisodioVI";
-    private string episodioVII = "EpisodioVII";
-    private string episodioVIII = "EpisodioVIII";
-    private string episodioIX = "EpisodioIX";
+    //VARIAVEIS DO PRIMEIRO MAPA DO JOGO
+    private string MapaI = "Mapa I";
+    private string episodioI_I = "Episodio I-I";
+    private string episodioI_II = "Episodio I-II";
+    private string episodioI_III = "Episodio I-III";
+    private string episodioI_IV = "Episodio I-IV";
+    private string episodioI_V = "Episodio I-V";
+    private string episodioI_VI = "Episodio I-VI";
+    private string episodioI_VII = "Episodio I-VII";
+    private string episodioI_VIII = "Episodio I-VIII";
+    private string episodioI_IX = "Episodio I-IX";
+    private string episodioI_X = "Episodio I-X";
+
+    //VARIAVEIS DO SEGUNDO MAPA DO JOGO
+    private string MapaII = "Mapa II";
+    private string episodioII_I = "Episodio II-I";
+    private string episodioII_II = "Episodio II-II";
+    private string episodioII_III = "Episodio II-III";
+    private string episodioII_IV = "Episodio II-IV";
+    private string episodioII_V = "Episodio II-V";
+    private string episodioII_VI = "Episodio II-VI";
+    private string episodioII_VII = "Episodio II-VII";
+    private string episodioII_VIII = "Episodio II-VIII";
+    private string episodioII_IX = "Episodio II-IX";
+    private string episodioII_X = "Episodio II-X";
 
     public SelectScenes selectScenes;
 
     //VARIAVEIS DO PRIMEIRO MAP DO JOGO
-    public GameObject Open0;
     public GameObject Open1;
     public GameObject Open2;
     public GameObject Open3;
@@ -40,8 +52,8 @@ public class MenuSelectScenes : MonoBehaviour
     public GameObject Open7;
     public GameObject Open8;
     public GameObject Open9;
+    public GameObject Open10;
 
-    public GameObject Close1;
     public GameObject Close2;
     public GameObject Close3;
     public GameObject Close4;
@@ -50,13 +62,14 @@ public class MenuSelectScenes : MonoBehaviour
     public GameObject Close7;
     public GameObject Close8;
     public GameObject Close9;
+    public GameObject Close10;
 
     // Use this for initialization
     void Start()
     {
         gm = this;
 
-        if (selectScenes == SelectScenes.MapaUm)
+        if (selectScenes == SelectScenes.Mapa_I)
         {
             PrimeiroMapa();
         }
@@ -64,78 +77,84 @@ public class MenuSelectScenes : MonoBehaviour
 
     // LINHA DE COMANDO DOS BOTOES DO MUNDO 1
     #region
-    public void Episodio0()
+    public void EpisodioI_I()
     {
-        SceneManager.LoadScene(episodio0);
+        SceneManager.LoadScene(episodioI_I);
         AudioBotaoClick();
     }
 
-    public void EpisodioI()
+    public void EpisodioI_II()
     {
-        SceneManager.LoadScene(episodioI);
+        SceneManager.LoadScene(episodioI_II);
         AudioBotaoClick();
     }
 
-    public void EpisodioII()
+    public void EpisodioI_III()
     {
-        SceneManager.LoadScene(episodioII);
+        SceneManager.LoadScene(episodioI_III);
         AudioBotaoClick();
     }
 
-    public void EpisodioIII()
+    public void EpisodioI_IV()
     {
-        SceneManager.LoadScene(episodioIII);
+        SceneManager.LoadScene(episodioI_IV);
         AudioBotaoClick();
     }
 
-    public void EpisodioIV()
+    public void EpisodioI_V()
     {
-        SceneManager.LoadScene(episodioIV);
+        SceneManager.LoadScene(episodioI_V);
         AudioBotaoClick();
     }
 
-    public void EpisodioV()
+    public void EpisodioI_VI()
     {
-        SceneManager.LoadScene(episodioV);
+        SceneManager.LoadScene(episodioI_VI);
         AudioBotaoClick();
     }
 
-    public void EpisodioVI()
+    public void EpisodioI_VII()
     {
-        SceneManager.LoadScene(episodioVI);
+        SceneManager.LoadScene(episodioI_VII);
         AudioBotaoClick();
     }
 
-    public void EpisodioVII()
+    public void EpisodioI_VIII()
     {
-        SceneManager.LoadScene(episodioVII);
+        SceneManager.LoadScene(episodioI_VIII);
         AudioBotaoClick();
     }
 
-    public void EpisodioVIII()
+    public void EpisodioI_IX()
     {
-        SceneManager.LoadScene(episodioVIII);
+        SceneManager.LoadScene(episodioI_IX);
         AudioBotaoClick();
     }
 
-    public void EpisodioIX()
+    public void EpisodioI_X()
     {
-        SceneManager.LoadScene(episodioIX);
+        SceneManager.LoadScene(episodioI_X);
         AudioBotaoClick();
     }
 
     #endregion
 
     // LINHA DE COMANDO BOTOES DOS MUNDOS
-    public void Voltar()
+    public void Home()
     {
         SceneManager.LoadScene(home);
         AudioBotaoClick();
     }
 
-    public void VoltarMundoUm()
+    public void Mundo_I()
     {
-        SceneManager.LoadScene(MapaUm);
+        SceneManager.LoadScene(MapaI);
+        AudioBotaoClick();
+    }
+
+    public void Mundo_II()
+    {
+        SceneManager.LoadScene(MapaII);
         AudioBotaoClick();
     }
 
@@ -143,7 +162,7 @@ public class MenuSelectScenes : MonoBehaviour
     #region
     public void PlayerGame()
     {
-        SceneManager.LoadScene(MapaUm);
+        SceneManager.LoadScene(MapaI);
         AudioBotaoClick();
     }
 
@@ -171,24 +190,14 @@ public class MenuSelectScenes : MonoBehaviour
     void PrimeiroMapa()
     {
         // LINHA DE COMANDO FASES ABERTAS
-        if (Open0 == null)
-        {
-            Open0 = GameObject.Find("Open0");
-            Open0.SetActive(true);
-        }
-        else
-        {
-            Open0.SetActive(true);
-        }
-
         if (Open1 == null)
         {
             Open1 = GameObject.Find("Open1");
-            Open1.SetActive(false);
+            Open1.SetActive(true);
         }
         else
         {
-            Open1.SetActive(false);
+            Open1.SetActive(true);
         }
 
         if (Open2 == null)
@@ -271,17 +280,17 @@ public class MenuSelectScenes : MonoBehaviour
             Open9.SetActive(false);
         }
 
-        // LINHA DE COMANDO DAS FASES FECHADAS
-        if (Close1 == null)
+        if (Open10 == null)
         {
-            Close1 = GameObject.Find("Close1");
-            Close1.SetActive(true);
+            Open10 = GameObject.Find("Open10");
+            Open10.SetActive(false);
         }
         else
         {
-            Close1.SetActive(true);
+            Open9.SetActive(false);
         }
 
+        // LINHA DE COMANDO DAS FASES FECHADAS
         if (Close2 == null)
         {
             Close2 = GameObject.Find("Close2");
@@ -360,6 +369,16 @@ public class MenuSelectScenes : MonoBehaviour
         else
         {
             Close9.SetActive(true);
+        }
+
+        if (Close10 == null)
+        {
+            Close10 = GameObject.Find("Close10");
+            Close10.SetActive(true);
+        }
+        else
+        {
+            Close10.SetActive(true);
         }
     }
 

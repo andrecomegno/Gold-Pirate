@@ -7,8 +7,8 @@ public class MenuInGame : MonoBehaviour {
 
     public static MenuInGame gm;
 
-    private string MapaUm = "MapaUm";
-	private string MapaDois = "MapaDois";
+    private string Mapa_I = "Mapa I";
+	private string Mapa_II = "Mapa II";
 	private string Home = "Home";
 	public bool _pause = false;
 
@@ -53,12 +53,12 @@ public class MenuInGame : MonoBehaviour {
     }
 
 	public void BotaoMundoUm(){
-		SceneManager.LoadScene(MapaUm);
+		SceneManager.LoadScene(Mapa_I);
 		Time.timeScale = 1.0f; 
 	}
 
 	public void BotaoMundoDois(){
-		SceneManager.LoadScene(MapaDois);
+		SceneManager.LoadScene(Mapa_II);
 		Time.timeScale = 1.0f; 	
 	}
 

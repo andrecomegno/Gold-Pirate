@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 9176697092350290163}
   - component: {fileID: 9176697092350290162}
   - component: {fileID: 9176697092350290173}
-  - component: {fileID: 386374427}
+  - component: {fileID: 1652303560}
   - component: {fileID: 386374423}
+  - component: {fileID: 9176697092735874028}
   m_Layer: 2
   m_Name: Urubu
-  m_TagString: Untagged
+  m_TagString: Inimigos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 41.87, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 9176697093156992027}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -7188564884606703818, guid: 5a2575173e769d849819efad631ccf14,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,8 +106,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &386374427
-CircleCollider2D:
+--- !u!61 &1652303560
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,9 +119,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.11, y: -0.86}
+  m_Offset: {x: 0.57, y: -0.51}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5462913, y: 0.5847499}
+    oldSize: {x: 8.242116, y: 5.04}
+    newSize: {x: 8.243208, y: 5.04}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.82
+  m_Size: {x: 2.35, y: 1.3}
+  m_EdgeRadius: 0
 --- !u!114 &386374423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,87 +144,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7565ade5ef88e4299ed6bdfee02209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectInimigos: 8
-  InimigoCombate: 0
+  selectInimigos: 3
+  InimigoCombate: 6
   pirata: {fileID: 0}
+  jumpHead: 500
+  distance: 0
   flip: 1
-  indioAtacar: 0
-  indioMorrer: 0
-  tubaraoAtacar: 0
-  canhaoAtirar: 0
   moedas: {fileID: 0}
-  TransformMoe: {fileID: 0}
+  transformeMoedas: {fileID: 0}
   moe: {fileID: 0}
-  bumerangue: {fileID: 0}
-  TransformBume: {fileID: 0}
-  bume: {fileID: 0}
+  indioArma: {fileID: 0}
+  transformArmas: {fileID: 0}
+  armaClone: {fileID: 0}
   tracos: {fileID: 0}
-  Bala: {fileID: 0}
-  Ba: {fileID: 0}
-  BaTransform: {fileID: 0}
-  AudiosObjetos: []
-  Faisca: {fileID: 0}
---- !u!1 &9176697093156992026
-GameObject:
+--- !u!50 &9176697092735874028
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9176697093156992027}
-  - component: {fileID: 9176697093156992024}
-  m_Layer: 2
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9176697093156992027
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9176697093156992026}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 9176697092350290163}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &9176697093156992024
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9176697093156992026}
-  m_Enabled: 1
-  m_Density: 1
+  m_GameObject: {fileID: 9176697092350290172}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.90584564, y: -0.16112787}
-      - {x: -0.103717804, y: -0.041529745}
-      - {x: -0.8538466, y: -0.15474874}
-      - {x: -0.5104689, y: -0.8918657}
-      - {x: 1.065876, y: -1.492689}
-      - {x: 1.7983223, y: -1.2207644}
-      - {x: 1.7373619, y: -0.7615582}
-      - {x: 1.4204473, y: -0.47330308}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

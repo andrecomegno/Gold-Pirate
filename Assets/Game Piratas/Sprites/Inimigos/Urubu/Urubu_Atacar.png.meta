@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 7305e4da495f4974baa0d9785e23828a
+guid: a90279e01cd07c647b72906fb498d877
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6140514333304516488
-    second: Episodio I-III_0
+      213: 8067232782692056865
+    second: Urubu_Atacar_0
   - first:
-      213: -7407130186180598415
-    second: Episodio I-III_1
+      213: -6790843509597577198
+    second: Urubu_Atacar_1
   - first:
-      213: -8905571804699172131
-    second: Episodio I-III_2
+      213: -7425153035459111270
+    second: Urubu_Atacar_2
+  - first:
+      213: -2444711849281704039
+    second: Urubu_Atacar_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,64 +113,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Episodio I-III_0
+      name: Urubu_Atacar_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2435
-        width: 3998
-        height: 2252
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5
+        y: 677
+        width: 705
+        height: 492
+      alignment: 9
+      pivot: {x: 0.57271534, y: 0.6706393}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87090396fb288caa0800000000000000
-      internalID: -6140514333304516488
+      spriteID: 12ffebc497194ff60800000000000000
+      internalID: 8067232782692056865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Episodio I-III_1
+      name: Urubu_Atacar_1
       rect:
         serializedVersion: 2
-        x: 4518
-        y: 2371
-        width: 2454
-        height: 2316
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1083
+        y: 681
+        width: 506
+        height: 420
+      alignment: 9
+      pivot: {x: 0.3795991, y: 0.89270777}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 175e1af1756943990800000000000000
-      internalID: -7407130186180598415
+      spriteID: 2106b25bec312c1a0800000000000000
+      internalID: -6790843509597577198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Episodio I-III_2
+      name: Urubu_Atacar_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1997
+        y: 722
+        width: 444
+        height: 375
+      alignment: 9
+      pivot: {x: 0.33266634, y: 0.9140768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96db8687ae84f890800000000000000
+      internalID: -7425153035459111270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Urubu_Atacar_3
+      rect:
+        serializedVersion: 2
+        x: 234
         y: 0
-        width: 4052
-        height: 2115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 414
+        height: 378
+      alignment: 9
+      pivot: {x: 0.2645793, y: 0.80715597}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2eb2b90ad096480800000000000000
-      internalID: -8905571804699172131
+      spriteID: 99f20659683a21ed0800000000000000
+      internalID: -2444711849281704039
       vertices: []
       indices: 
       edges: []

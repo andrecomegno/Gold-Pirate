@@ -137,7 +137,7 @@ public class ObjetosManager : MonoBehaviour {
         {
             if (other.CompareTag("Pirata"))
             {
-                InimigoControle.gm.canhaoAtirar = false;
+                //InimigoControle.gm.canhaoAtirar = false;
 
                 PirataControle.gm.MorrerEsmagado();
             }

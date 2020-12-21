@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 7305e4da495f4974baa0d9785e23828a
+guid: 1323ff95686d79e46a44652d45a154d2
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -6140514333304516488
-    second: Episodio I-III_0
+    second: Episodio I-IV_2
   - first:
       213: -7407130186180598415
-    second: Episodio I-III_1
+    second: Episodio I-IV_0
   - first:
       213: -8905571804699172131
-    second: Episodio I-III_2
+    second: Episodio I-IV_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Episodio I-III_0
+      name: Episodio I-IV_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 2435
-        width: 3998
-        height: 2252
+        y: 2486
+        width: 3198
+        height: 2901
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Episodio I-III_1
+      name: Episodio I-IV_1
       rect:
         serializedVersion: 2
-        x: 4518
-        y: 2371
-        width: 2454
-        height: 2316
+        x: 3757
+        y: 2486
+        width: 2723
+        height: 2901
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Episodio I-III_2
+      name: Episodio I-IV_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1271
         y: 0
-        width: 4052
-        height: 2115
+        width: 4014
+        height: 2297
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

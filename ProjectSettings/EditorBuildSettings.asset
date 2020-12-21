@@ -15,33 +15,21 @@ EditorBuildSettings:
     path: Assets/Game Piratas/Cenas Do Jogo/Mundo I/Mapa I.unity
     guid: 78843e662ef397e49a77407e3149e5b7
   - enabled: 1
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Mapa II.unity
+    guid: f8b16f4f17de5964e954067f42f7960c
+  - enabled: 1
     path: Assets/Game Piratas/Cenas Do Jogo/Mundo I/Episodio I-I.unity
     guid: 010a439653897fd4b86a9bc95e57211c
   - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-I.unity
-    guid: 19a65c7114012174aabd86e741ae90bb
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo I/Episodio I-II.unity
+    guid: 1ad9264d5e16cf74096ccada1eb4bb69
   - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-II.unity
-    guid: 44b46f6e934b26049ba9a76febcfe624
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo I/Episodio I-III.unity
+    guid: d42288ac7f161464b8af6443b0a3789f
   - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-III.unity
-    guid: 4c1f8f11b9fbe354b9025d2d2ba7d138
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo I/Episodio I-IV.unity
+    guid: 92d099f8c8f615f48817c111d8d88968
   - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-IV.unity
-    guid: ce43cc78a03feec4d83468811ca9d7bb
-  - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-V.unity
-    guid: 007ac4f2bd7f8a24c8d772b7fa7ca78e
-  - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-VI.unity
-    guid: 6e4dab6be0c31ef49ad12d5dafdad4a5
-  - enabled: 1
-    path: Assets/Game Piratas/Cenas Do Jogo/Mundo II/Episodio II-VII.unity
-    guid: 379afa7f87a80654491119058a431e83
-  - enabled: 0
-    path: 
-    guid: fe6e4eba0b543bd4ba8c2469c602c8ed
-  - enabled: 0
-    path: 
-    guid: fb04a058341defe45b7ca27f47a7b162
+    path: Assets/Game Piratas/Cenas Do Jogo/Mundo I/Episodio I-V.unity
+    guid: 412056c89266a7b4986feae33bae7b5a
   m_configObjects: {}
