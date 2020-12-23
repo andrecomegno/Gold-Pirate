@@ -18,217 +18,380 @@ public class Mundos : MonoBehaviour {
 
 	public static Mundos gm;
 
-    // Variaveis dentro do jogo
-    public int coins = 0;
-    public Text CoinText;
+	// Variaveis dentro do jogo
+	public int coins = 0;
+	public Text CoinText;
 
-	void Awake(){
+	public LevelMapa menuSelectScenes;
+
+	public GameObject[] stars;
+
+	void Awake() {
 		if (selecionarModo == SelectModo.NoJogo) {
-            gm = this;
-		}
-        
-        if (selecionarModo == SelectModo.Mundo_I) {
-			OpenFindMapa_I ();
-		}
-    }
-
-    void Start () {
-		if (selecionarModo == SelectModo.Mundo_I) {			
-			SetActiveMapa_I ();
+			gm = this;
 		}
 
-		if (selecionarModo == SelectModo.Mundo_II)
-		{
-			//SetActiveMapa_II();
+		if (selecionarModo == SelectModo.Mundo_I) {
+			menuSelectScenes = GameObject.Find("Mapa I").GetComponent<LevelMapa>();
+			SetActiveMapa_I();
 		}
+	}
 
+	void Start() {
 		if (selecionarModo == SelectModo.Moedas) {
-			CoinText = GetComponent<Text> () as Text;
+			CoinText = GetComponent<Text>() as Text;
 		}
-    }
+	}
 
-	void Update(){
+	void Update() {
 		//LINHA DE COMANDO QUE RESET O SALVE
-		if (Input.GetKeyDown (KeyCode.F1)) {
-			PlayerPrefs.DeleteAll ();
+		if (Input.GetKeyDown(KeyCode.F1)) {
+			PlayerPrefs.DeleteAll();
 			Debug.Log("RESET SALVE");
 		}
 
-		HabilitarEstrelasFases ();
-		CompleteInGame ();
+		HabilitarEstrelasFases();
+		CompleteInGame();
 	}
 
-    // LINHA DE COMANDO QUE MOSTRA O QUANTO DE MOEDAS 
-    //FOI PEGO DENTRO DO JOGO PARA HABILITAR AS ESTRELAS NO MAPA
-    #region MOEDAS
-    void CoinLogic()
-    {
-		GetComponent<Text> ().text = coins.ToString ("00");
-    }
+	/* LINHA DE COMANDO QUE MOSTRA O QUANTO DE MOEDAS FOI
+	 * PEGO DENTRO DO JOGO PARA HABILITAR AS ESTRELAS NO MAPA */
+	#region MOEDAS
+	void CoinLogic()
+	{
+		GetComponent<Text>().text = coins.ToString("00");
+	}
 
 	public void Coins(int adj)
-    {
+	{
 		coins += adj;
-    }
-    
-    // LINHA DE COMANDO MISSAO COMPLETA DE COLETAS E SALVA AS 10 MOEDAS NO DENTRO DO JOGO
-    void CompleteInGame()
-    {
-        // LINHA DE COMANDO ESTA VINCULADA NO MAPA E NA TELA DA MOEDA TXT DENTRO DO JOGO
-        if (selecionarModo == SelectModo.NoJogo)
-        {
-            // LINHA DE COMANDO DAS MOEDAS
-			CoinLogic ();
-            
-            // LINHA DE COAMNDO VERIFICA SE ESTA SELECIONADO O LEVEL_1 
-            if (levelComplet == LevelComplet.Level_1){
+	}
 
-                // LINHA DE COMANDO QUE VERIFICA SE O LEVEL0 E IGUAL A 10 MOEDAS COLETDAS DENTRO DO JOGO
+	// LINHA DE COMANDO MISSAO COMPLETA DE COLETAS E SALVA AS 10 MOEDAS NO DENTRO DO JOGO
+	void CompleteInGame()
+	{
+		// LINHA DE COMANDO ESTA VINCULADA NO MAPA E NA TELA DA MOEDA TXT DENTRO DO JOGO
+		if (selecionarModo == SelectModo.NoJogo)
+		{
+			// LINHA DE COMANDO DAS MOEDAS
+			CoinLogic();
+
+			// LINHA DE COAMNDO VERIFICA SE ESTA SELECIONADO O LEVEL_1 
+			if (levelComplet == LevelComplet.Level_1) {
+
+				// LINHA DE COMANDO QUE VERIFICA SE O LEVEL_1 E IGUAL A 10 MOEDAS COLETDAS DENTRO DO JOGO
 				if (levelComplet == LevelComplet.Level_1 && coins == 10) {
 
-                    // LINHA DE COMANDO QUE HABILITA O MENU MISSAO COMPLETA CASO COLETADOS AS 10 MOEDAS
-                    MenuInGame.gm.CompleteiMissao();
+					// LINHA DE COMANDO QUE HABILITA O MENU MISSAO COMPLETA CASO COLETADOS AS 10 MOEDAS
+					MenuInGame.gm.CompleteiMissao();
 				}
 			}
 
-			if(levelComplet == LevelComplet.Level_2){				
+			if (levelComplet == LevelComplet.Level_2) {
 				if (levelComplet == LevelComplet.Level_2 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_3){				
+			if (levelComplet == LevelComplet.Level_3) {
 				if (levelComplet == LevelComplet.Level_3 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_4){				
+			if (levelComplet == LevelComplet.Level_4) {
 				if (levelComplet == LevelComplet.Level_4 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_5){				
+			if (levelComplet == LevelComplet.Level_5) {
 				if (levelComplet == LevelComplet.Level_5 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_6){				
+			if (levelComplet == LevelComplet.Level_6) {
 				if (levelComplet == LevelComplet.Level_6 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_7){				
+			if (levelComplet == LevelComplet.Level_7) {
 				if (levelComplet == LevelComplet.Level_7 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_8){				
+			if (levelComplet == LevelComplet.Level_8) {
 				if (levelComplet == LevelComplet.Level_8 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_9){
-                if (levelComplet == LevelComplet.Level_9 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+			if (levelComplet == LevelComplet.Level_9) {
+				if (levelComplet == LevelComplet.Level_9 && coins == 10) {
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 
-			if(levelComplet == LevelComplet.Level_10){				
+			if (levelComplet == LevelComplet.Level_10) {
 				if (levelComplet == LevelComplet.Level_10 && coins == 10) {
-                    MenuInGame.gm.CompleteiMissao();
-                }
+					MenuInGame.gm.CompleteiMissao();
+				}
 			}
 		}
 	}
-    #endregion
+	#endregion
 
-    /* LINHA DE COMANDO RESPONSAVEL PARA HABILITAR UMA NOVA FASE NO MENU SELECIONAR MAPA
+	/* LINHA DE COMANDO RESPONSAVEL PARA HABILITAR UMA NOVA FASE NO MENU SELECIONAR MAPA
      * E TAMBEM MOSTRAR A QUANTIDA DE ESTRELAS QUE VOCE TIROU NA FASE */
-    void HabilitarEstrelasFases(){
+	void HabilitarEstrelasFases() {
 
-        #region MAPA I DO JOGO
-        // LINHA DE COMANDO QUE VERIFICA SE O MAPA 1 ESTA SELECIONA 
-        if (selecionarModo == SelectModo.Mundo_I){
-
-			Mapa_I.gm.HabilitarFase();
-
+		#region MAPA I DO JOGO
+		// LINHA DE COMANDO QUE VERIFICA SE O MAPA 1 ESTA SELECIONA 
+		if (selecionarModo == SelectModo.Mundo_I) {
 			// LINHA DE COMANDO QUE VERIFICA SE A FASE ESTA SELECIONADO COMO LEVEL_1 
 			if (levelComplet == LevelComplet.Level_1)
 			{
-				Mapa_I.gm.Level_1();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					// LINHA DE COMANDO QUE HABILITA A LEVEL_2 DO MUNDO I
+					menuSelectScenes.Open2.SetActive(true);
+					menuSelectScenes.Close2.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_1_0"))
+				{
+					// MOSTRA UMA ESTRELA NO JOGO
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_1_1"))
+				{
+					// MOSTRA DUAS ESTRELA NO JOGO
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_1_2"))
+				{
+					// TRÊS ESTRELA NO JOGO
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_2)
 			{
-				Mapa_I.gm.Level_2();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open3.SetActive(true);
+					menuSelectScenes.Close3.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_2_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_2_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_2_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_3)
 			{
-				Mapa_I.gm.Level_3();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open4.SetActive(true);
+					menuSelectScenes.Close4.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_3_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_3_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_3_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_4)
 			{
-				Mapa_I.gm.Level_4();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open5.SetActive(true);
+					menuSelectScenes.Close5.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_4_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_4_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_4_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_5)
 			{
-				Mapa_I.gm.Level_5();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open6.SetActive(true);
+					menuSelectScenes.Close6.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_5_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_5_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_5_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_6)
 			{
-				Mapa_I.gm.Level_6();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open7.SetActive(true);
+					menuSelectScenes.Close7.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_6_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_6_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_6_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_7)
 			{
-				Mapa_I.gm.Level_7();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open8.SetActive(true);
+					menuSelectScenes.Close8.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_7_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_7_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_7_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_8)
 			{
-				Mapa_I.gm.Level_8();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open9.SetActive(true);
+					menuSelectScenes.Close9.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_8_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_8_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_8_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
 			if (levelComplet == LevelComplet.Level_9)
 			{
-				Mapa_I.gm.Level_9();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					menuSelectScenes.Open10.SetActive(true);
+					menuSelectScenes.Close10.SetActive(false);
+				}
+
+				if (PlayerPrefs.HasKey("Star_9_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_9_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_9_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
 
             if (levelComplet == LevelComplet.Level_10)
             {
-				Mapa_I.gm.Level_10();
+				if (stars[1].activeSelf == true || stars[2].activeSelf == true)
+				{
+					// MUNDO 2
+				}
+
+				if (PlayerPrefs.HasKey("Star_10_0"))
+				{
+					stars[0].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_10_1"))
+				{
+					stars[1].SetActive(true);
+				}
+				if (PlayerPrefs.HasKey("Star_10_2"))
+				{
+					stars[2].SetActive(true);
+				}
 			}
-        }
+		}
 
-        #endregion
+		#endregion
 
-        #region MAPA II DO JOGO
-		if(selecionarModo == SelectModo.Mundo_II)
-        {
+		#region MAPA II DO JOGO
+		if (selecionarModo == SelectModo.Mundo_II)
+		{
 
-        }
-        #endregion
+		}
+		#endregion
 
-    }
-
-	void OpenFindMapa_I()
-	{
-		Mapa_I.gm.OpenFindMapa();
 	}
 
 	void SetActiveMapa_I()
 	{
-		Mapa_I.gm.SetActiveMapa();
+		stars[0].SetActive(false);
+		stars[1].SetActive(false);
+		stars[2].SetActive(false);
 	}
 }
 

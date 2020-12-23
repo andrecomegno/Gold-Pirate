@@ -420,12 +420,10 @@ MonoBehaviour:
   jumpHead: 950
   distance: 0
   flip: 1
-  tubaraoAtacar: 0
   moedas: {fileID: 4142160233996153943, guid: 3d1c56335ebe8cc4592dbe6580e77878, type: 3}
   transformeMoedas: {fileID: 1816642718587851563}
   moe: {fileID: 0}
-  indioArma: {fileID: 9150578365831437001, guid: 47337e263aa9dd1449a70140b0ae03e5,
-    type: 3}
+  Armas: {fileID: 9150578365831437001, guid: 47337e263aa9dd1449a70140b0ae03e5, type: 3}
   transformArmas: {fileID: 1816642718745676148}
   armaClone: {fileID: 0}
   tracos: {fileID: 7275762467833803968}

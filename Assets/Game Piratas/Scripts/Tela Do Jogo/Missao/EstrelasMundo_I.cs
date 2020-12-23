@@ -20,7 +20,6 @@ public class EstrelasMundo_I : MonoBehaviour
             // LINHA DE COMANDO QUE VERIFICA SE COLETOU TODAS AS MOEDAS DO MAPA
             if (Mundos.gm.coins == 10)
             {
-
                 // LINHA DE COMANDO QUE VERIFICA SE O TEMPO ESTA IGUAL OU ABAIXO DE 21 SEGUNDOS
                 if (Cronometro.gm.Seconds <= 5)
                 {

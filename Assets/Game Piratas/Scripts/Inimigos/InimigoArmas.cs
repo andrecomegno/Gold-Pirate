@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ArmasInimigos
 {
-    name, bumerangue, espada, lanca 
+    name, bumerangue, espada, bolafogo 
 }
 
 public class InimigoArmas : MonoBehaviour
@@ -16,10 +16,10 @@ public class InimigoArmas : MonoBehaviour
     public AudioSource audioSource;
     public CircleCollider2D circle2D;
 
-    // VARIAVEIS BUMERANGUE
+    // BUMERANGUE
     public SpriteRenderer SpriteBumerangue;
-    public float VeloBume = 13;
-    public float RotaBume = 500;
+    public float velo = 13;
+    public float girar = 500;
     public Rigidbody2D rigi2d;
     public bool dentro = false;
 
@@ -35,29 +35,47 @@ public class InimigoArmas : MonoBehaviour
 
     void Update()
     {
-        LogicBumerangue();
+        InimigosArmas();
     }
 
-    void LogicBumerangue()
+    void InimigosArmas()
     {
-        // LINHA DE COMANDO QUE VERIFICA SE ESTA SELCIONA O BUMERAANGUE
-        if (armasInimigos == ArmasInimigos.bumerangue)
+        switch (armasInimigos)
         {
-            // ESSA LINHA REPRESENTA O ROTACAO DO BUMERANGUE, TBM A VELOCIDADE E O GIRO NO EIXO 
-            rigi2d.velocity = new Vector2(-VeloBume, 0);
-
-            //LINHA DE COMANDO QUE VERIFICA SE ESTA DENTRO DO COLISOR PINGPONG
-            if (dentro == true)
-            {
-                StartCoroutine(TimeBumerangue());
-            }
-
-            // LINHA DE COMANDO QUE FAZ O BUMERANGUE GIRAR 
-            transform.Rotate(Vector3.forward * RotaBume * Time.deltaTime);
-        }    
+            case ArmasInimigos.bumerangue:
+                Bumerangue();
+                break;
+            case ArmasInimigos.espada:
+                break;
+            case ArmasInimigos.bolafogo:
+                BolaDeFogo();
+                break;
+            default:
+                break;
+        }
     }
 
-    // ESSA LINHA DESTROI O BUMERANGUE QUANDO O INDIO MORRER
+    void BolaDeFogo()
+    {
+        rigi2d.velocity = new Vector2(-velo, 0);
+    }
+
+    void Bumerangue()
+    {
+        // ESSA LINHA REPRESENTA O ROTACAO DO BUMERANGUE, TBM A VELOCIDADE E O GIRO NO EIXO 
+        rigi2d.velocity = new Vector2(-velo, 0);
+
+        //LINHA DE COMANDO QUE VERIFICA SE ESTA DENTRO DO COLISOR PINGPONG
+        if (dentro == true)
+        {
+            StartCoroutine(TimeBumerangue());
+        }
+
+        // LINHA DE COMANDO QUE FAZ O BUMERANGUE GIRAR 
+        transform.Rotate(Vector3.forward * girar * Time.deltaTime);  
+    }
+
+    // LINHA ESTA NO ANIMATION 
     public void Destruir()
     {   
         // LINHA DE COMANDO QUE VERIFICA SE ESTA SELECIONA O BUMERANGUE
@@ -96,6 +114,25 @@ public class InimigoArmas : MonoBehaviour
                 PirataControle.gm.MorrerFantasma();
             }
         }
+
+        if (armasInimigos == ArmasInimigos.bolafogo)
+        {
+            // ESSA LINHA QUE VERICA SE ESTA COLIDINDO COM O PIRATA
+            if (other.CompareTag("Pirata"))
+            {
+                // ESSA LINHA ATIVA A ANIMAÇAO MORRER QUEIMADO
+                PirataControle.gm.MorrerQueimado();
+
+                PirataControle.gm.MorrerFantasma();
+
+                Destroy(gameObject);
+            }
+
+            if (other.CompareTag("PirataArmas"))
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     // ESSA LINHA REPRESENTA O TIME QUE O BUMERANGUE VAI FICAR PARADO NO AR
@@ -106,6 +143,6 @@ public class InimigoArmas : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         // ESSA LINHA VOLTA A VELOCIDADE PARA A MAO DO INDIO
-        rigi2d.velocity = new Vector2(VeloBume, 0);
+        rigi2d.velocity = new Vector2(velo, 0);
     }
 }

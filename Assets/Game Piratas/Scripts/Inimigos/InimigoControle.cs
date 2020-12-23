@@ -42,7 +42,7 @@ public class InimigoControle : MonoBehaviour
     public GameObject moe;
 
     // INIMIGOS ARMAS
-    public GameObject indioArma;    
+    public GameObject Armas;    
     public Transform transformArmas;
     public GameObject armaClone;
     public GameObject tracos;
@@ -194,7 +194,7 @@ public class InimigoControle : MonoBehaviour
     public void IndioBumerangue()
     {
         // LINHA DE COMANDO DO INDIO PARA GERAR O BUMERAMGUE NO EVENTO ANIMATION
-        armaClone = Instantiate(indioArma, transformArmas.position, transformArmas.rotation) as GameObject;
+        armaClone = Instantiate(Armas, transformArmas.position, transformArmas.rotation) as GameObject;
     }
     
     public void ArmaTracos()
@@ -255,7 +255,7 @@ public class InimigoControle : MonoBehaviour
     #region URUBU
     public void UrubuPenas()
     {
-        // URUBU ATACA PENAS NO PIRATA
+        armaClone = Instantiate(Armas, transformArmas.position, transformArmas.rotation) as GameObject;
     }
 
     void UrubuVoando()

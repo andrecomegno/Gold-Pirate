@@ -347,6 +347,11 @@ MonoBehaviour:
   levelComplet: 7
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 633173359}
+  - {fileID: 1931437945}
+  - {fileID: 1104717720}
 --- !u!1 &90065885
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +946,11 @@ MonoBehaviour:
   levelComplet: 10
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 1803185239}
+  - {fileID: 2046026889}
+  - {fileID: 933566782}
 --- !u!1 &209392973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1279,11 @@ MonoBehaviour:
   levelComplet: 1
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 658487222}
+  - {fileID: 1889036863}
+  - {fileID: 1708149684}
 --- !u!1 &252487493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2533,6 @@ GameObject:
   - component: {fileID: 867354608}
   - component: {fileID: 867354607}
   - component: {fileID: 867354609}
-  - component: {fileID: 867354610}
   m_Layer: 5
   m_Name: Mapa I
   m_TagString: Untagged
@@ -2634,18 +2648,6 @@ MonoBehaviour:
   Close8: {fileID: 0}
   Close9: {fileID: 0}
   Close10: {fileID: 0}
---- !u!114 &867354610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867354605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c850a0f1f1829408c69ac8c0c2d324, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &869084661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,6 +3811,11 @@ MonoBehaviour:
   levelComplet: 6
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 1163982265}
+  - {fileID: 1548196471}
+  - {fileID: 1379541110}
 --- !u!1 &1163982265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,6 +4304,11 @@ MonoBehaviour:
   levelComplet: 5
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 941909366}
+  - {fileID: 810653583}
+  - {fileID: 915207084}
 --- !u!1 &1438586303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,6 +4497,11 @@ MonoBehaviour:
   levelComplet: 3
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 828790041}
+  - {fileID: 2060014936}
+  - {fileID: 1040942092}
 --- !u!1 &1453587040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,6 +4651,11 @@ MonoBehaviour:
   levelComplet: 2
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 521767872}
+  - {fileID: 1717524885}
+  - {fileID: 256163722}
 --- !u!1 &1482216816
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,6 +4805,11 @@ MonoBehaviour:
   levelComplet: 8
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 1870163189}
+  - {fileID: 800847222}
+  - {fileID: 521736504}
 --- !u!1 &1537537016
 GameObject:
   m_ObjectHideFlags: 0
@@ -5121,6 +5148,11 @@ MonoBehaviour:
   levelComplet: 4
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 1537537016}
+  - {fileID: 153789111}
+  - {fileID: 877493498}
 --- !u!1 &1708149684
 GameObject:
   m_ObjectHideFlags: 0
@@ -5495,6 +5527,11 @@ MonoBehaviour:
   levelComplet: 9
   coins: 0
   CoinText: {fileID: 0}
+  menuSelectScenes: {fileID: 0}
+  stars:
+  - {fileID: 1102185456}
+  - {fileID: 2064878155}
+  - {fileID: 1173949212}
 --- !u!1 &1870163189
 GameObject:
   m_ObjectHideFlags: 0

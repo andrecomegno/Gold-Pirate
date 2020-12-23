@@ -7,9 +7,9 @@ public enum SelectScenes{
 	intro, home, Mapa_I, Mapa_II
 }
 
-public class MenuSelectScenes : MonoBehaviour
+public class LevelMapa : MonoBehaviour
 {
-    public static MenuSelectScenes gm;
+    public static LevelMapa gm;
 
     private string home = "Home";
     private string creditos = "Creditos";
@@ -64,15 +64,18 @@ public class MenuSelectScenes : MonoBehaviour
     public GameObject Close9;
     public GameObject Close10;
 
-    // Use this for initialization
-    void Start()
+    private void Awake()
     {
-        gm = this;
-
         if (selectScenes == SelectScenes.Mapa_I)
         {
             PrimeiroMapa();
         }
+    }
+
+
+    void Start()
+    {
+        gm = this;
     }
 
     // LINHA DE COMANDO DOS BOTOES DO MUNDO 1
