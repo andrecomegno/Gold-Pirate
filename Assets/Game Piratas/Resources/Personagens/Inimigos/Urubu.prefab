@@ -30,6 +30,36 @@ Transform:
   m_Father: {fileID: 9176697092350290163}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &2728353649331833826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6900738192608152530}
+  m_Layer: 2
+  m_Name: Moedas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6900738192608152530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728353649331833826}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.04, y: -2.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9176697092350290163}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &9176697092350290172
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,6 +93,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 671616797}
+  - {fileID: 6900738192608152530}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -181,12 +212,10 @@ MonoBehaviour:
   jumpHead: 500
   distance: 0
   flip: 1
-  moedas: {fileID: 0}
-  transformeMoedas: {fileID: 0}
-  moe: {fileID: 0}
+  moedas: {fileID: 1000010828979448, guid: bb01067a3bd6b0f4b9e7ef4723f6c0c6, type: 3}
+  transformeMoedas: {fileID: 6900738192608152530}
   Armas: {fileID: 5962951076399254557, guid: aa8f8950fd1a5344099ba96869dcdfe9, type: 3}
   transformArmas: {fileID: 671616797}
-  armaClone: {fileID: 0}
   tracos: {fileID: 0}
 --- !u!50 &9176697092735874028
 Rigidbody2D:

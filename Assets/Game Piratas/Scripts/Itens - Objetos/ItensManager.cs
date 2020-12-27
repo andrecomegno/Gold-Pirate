@@ -3,17 +3,22 @@ using System.Collections;
 
 public enum ItensList
 {
-    name, moeda, bonusTempo
+    name, moeda, bonusTempo, moedaSeguir
 }
 
 public class ItensManager : MonoBehaviour
 {
     public static ItensManager gm;
     public ItensList itensList;
+    public Transform pirata;
     public Animator anima;
     public AudioSource audioSource;
     public CircleCollider2D circle2D;
     public Rigidbody2D rigi2d;
+
+    // MOEDAS SEGUIR
+    private float TubaNadar = 8f;
+    private float TubaAtacar = 35f;
 
     // VARIAVEIS DO AUDIOS
     public AudioClip[] AudiosItens;
@@ -25,11 +30,20 @@ public class ItensManager : MonoBehaviour
         anima = GetComponent<Animator>();
         rigi2d = GetComponent<Rigidbody2D>();
         circle2D = GetComponent<CircleCollider2D>();
+        pirata = GameObject.FindWithTag("Pirata").transform;
+    }
+
+    void FixedUpdate()
+    {
+        if(itensList == ItensList.moedaSeguir)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, pirata.position, 15 * Time.deltaTime);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (itensList == ItensList.moeda)
+        if (itensList == ItensList.moeda || itensList == ItensList.moedaSeguir)
         {
             if (other.CompareTag("Pirata") || other.CompareTag("Papagaio"))
             {

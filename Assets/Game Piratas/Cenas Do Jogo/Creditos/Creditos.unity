@@ -387,7 +387,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectScenes: 1
-  Open0: {fileID: 0}
   Open1: {fileID: 0}
   Open2: {fileID: 0}
   Open3: {fileID: 0}
@@ -397,7 +396,7 @@ MonoBehaviour:
   Open7: {fileID: 0}
   Open8: {fileID: 0}
   Open9: {fileID: 0}
-  Close1: {fileID: 0}
+  Open10: {fileID: 0}
   Close2: {fileID: 0}
   Close3: {fileID: 0}
   Close4: {fileID: 0}
@@ -406,6 +405,7 @@ MonoBehaviour:
   Close7: {fileID: 0}
   Close8: {fileID: 0}
   Close9: {fileID: 0}
+  Close10: {fileID: 0}
 --- !u!1 &326448989
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,8 +854,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 230256056}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Voltar
+        m_TargetAssemblyTypeName: LevelMapa, Assembly-CSharp
+        m_MethodName: Home
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

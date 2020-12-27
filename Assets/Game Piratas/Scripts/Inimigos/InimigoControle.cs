@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum SelectInimigos
 {
-    Name, Tubarao, Indio, Urubu
+    Name, Tubarao, Indio, Urubu, Urubu_Fogo, Urubu_Barril
 }
 
 public enum InimigoCombate
@@ -39,12 +39,12 @@ public class InimigoControle : MonoBehaviour
     // INIMIGOS MOEDAS
     public GameObject moedas;    
     public Transform transformeMoedas;
-    public GameObject moe;
+    private GameObject moeClone;
 
     // INIMIGOS ARMAS
     public GameObject Armas;    
     public Transform transformArmas;
-    public GameObject armaClone;
+    private GameObject armaClone;
     public GameObject tracos;
 
     void Awake()
@@ -83,6 +83,16 @@ public class InimigoControle : MonoBehaviour
                 rigi2d.velocity = new Vector2(TubaNadar, 0);
             }
         }
+
+        if(selectInimigos == SelectInimigos.Urubu_Barril)
+        {
+            rigi2d.velocity = new Vector2(-8, 0);
+
+            if (InimigoCombate != InimigoCombate.UrubuVoando)
+            {                
+                InimigoCombate = InimigoCombate.UrubuVoando;                
+            }            
+        }
     }
 
     void Inimigos()
@@ -91,6 +101,12 @@ public class InimigoControle : MonoBehaviour
         {
             case SelectInimigos.Urubu:
                 Urubu();
+                break;
+            case SelectInimigos.Urubu_Fogo:
+                Urubu_Fogo();
+                break;
+            case SelectInimigos.Urubu_Barril:
+                Urubu_Barril();
                 break;
             case SelectInimigos.Indio:
                 Indio();
@@ -253,7 +269,7 @@ public class InimigoControle : MonoBehaviour
     #endregion
 
     #region URUBU
-    public void UrubuPenas()
+    public void UrubuArmas()
     {
         armaClone = Instantiate(Armas, transformArmas.position, transformArmas.rotation) as GameObject;
     }
@@ -275,13 +291,18 @@ public class InimigoControle : MonoBehaviour
 
     void Urubu()
     {
+        // Urubu Não Atacar 
+    }
+
+    void Urubu_Fogo()
+    {
         distance = (transform.position.x - pirata.position.x);
 
         if (distance < 18)
         {
             if (InimigoCombate != InimigoCombate.UrubuAtacar)
             {
-                InimigoCombate = InimigoCombate.UrubuAtacar;
+                InimigoCombate = InimigoCombate.UrubuAtacar;                
             }
         }
         else if (distance > 18)
@@ -289,6 +310,24 @@ public class InimigoControle : MonoBehaviour
             if (InimigoCombate != InimigoCombate.UrubuVoando)
             {
                 InimigoCombate = InimigoCombate.UrubuVoando;
+            }            
+        }
+
+        if(distance > 20)
+        {
+            Destroy(armaClone);
+        }
+    }
+
+    void Urubu_Barril()
+    {
+        distance = (transform.position.x - pirata.position.x);
+
+        if (distance < 5)
+        {
+            if (InimigoCombate != InimigoCombate.UrubuAtacar)
+            {
+                InimigoCombate = InimigoCombate.UrubuAtacar;
             }
         }
     }
@@ -350,7 +389,9 @@ public class InimigoControle : MonoBehaviour
         #endregion
 
         #region Urubu
-        if (selectInimigos == SelectInimigos.Urubu)
+        if (selectInimigos == SelectInimigos.Urubu_Fogo || 
+            selectInimigos == SelectInimigos.Urubu_Barril ||
+            selectInimigos == SelectInimigos.Urubu)
         {    
             if (coll.CompareTag("PirataArmas"))
             {
@@ -369,6 +410,7 @@ public class InimigoControle : MonoBehaviour
                 }
             }
         }
+
         #endregion
     }
 
@@ -392,7 +434,7 @@ public class InimigoControle : MonoBehaviour
     {
         if(moedas != null)
         {
-            moe = Instantiate(moedas, transformeMoedas.position, transformeMoedas.rotation) as GameObject;
+            moeClone = Instantiate(moedas, transformeMoedas.position, transformeMoedas.rotation) as GameObject;
         }
     }
 

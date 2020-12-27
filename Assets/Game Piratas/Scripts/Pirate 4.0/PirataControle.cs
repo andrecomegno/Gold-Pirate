@@ -137,7 +137,6 @@ public class PirataControle : MonoBehaviour {
     public void JumpHead(float jumpHead)
     {
         rigi2d.velocity = new Vector2(0, jumpHead * Time.deltaTime);
-        //Debug.Log("JumpHead");
     }
 
     //LINHA DE COMANDO QUE VERIFICA SE O PERSONAGEM ESTA NO CHAO E TBM DENTRO DO OCEANO, ATIVANDO ASSIM A ANIMAÇAO NADAR
@@ -373,7 +372,7 @@ public class PirataControle : MonoBehaviour {
         if (espada)
         {
             // LINHA DE COMOANDO VERIFICA SE O PIRATA ESTA NO CHAO
-            if (solo)
+            if (solo || !solo)
             {
                 anima.SetBool("EspadaAtacarParado", true);
             }

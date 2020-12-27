@@ -117,9 +117,10 @@ MonoBehaviour:
   anima: {fileID: 0}
   audioSource: {fileID: 0}
   circle2D: {fileID: 0}
+  yVelo: 0
+  xVelo: 13
   SpriteBumerangue: {fileID: 0}
-  VeloBume: 13
-  RotaBume: 500
+  girar: 500
   rigi2d: {fileID: 0}
   dentro: 0
 --- !u!50 &6824157585683418394

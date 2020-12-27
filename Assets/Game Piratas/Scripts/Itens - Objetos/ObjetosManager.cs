@@ -66,11 +66,6 @@ public class ObjetosManager : MonoBehaviour {
         CameraShake.gm.Shake(0.2f, 0.4f);
     }
 
-    public void Bau()
-    {
-
-    }
-
     // LINHA DE COMANDO DO AUDIO DA FAISCA DO CANHO E BARRILS
     void SomFaisca()
     {
