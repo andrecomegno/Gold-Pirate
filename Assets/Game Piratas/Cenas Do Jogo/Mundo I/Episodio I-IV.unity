@@ -666,6 +666,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1883733050}
     m_Modifications:
+    - target: {fileID: 386374423, guid: 5b598c0f0f3a1294c9cc1c83af2363d6, type: 3}
+      propertyPath: moedas
+      value: 
+      objectReference: {fileID: 1000010828979448, guid: bb01067a3bd6b0f4b9e7ef4723f6c0c6,
+        type: 3}
+    - target: {fileID: 386374423, guid: 5b598c0f0f3a1294c9cc1c83af2363d6, type: 3}
+      propertyPath: jumpHead
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 9176697092350290163, guid: 5b598c0f0f3a1294c9cc1c83af2363d6,
         type: 3}
       propertyPath: m_RootOrder
@@ -2055,6 +2064,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1883733050}
     m_Modifications:
+    - target: {fileID: 386374423, guid: 5b598c0f0f3a1294c9cc1c83af2363d6, type: 3}
+      propertyPath: moedas
+      value: 
+      objectReference: {fileID: 1000010828979448, guid: bb01067a3bd6b0f4b9e7ef4723f6c0c6,
+        type: 3}
     - target: {fileID: 386374423, guid: 5b598c0f0f3a1294c9cc1c83af2363d6, type: 3}
       propertyPath: jumpHead
       value: 800

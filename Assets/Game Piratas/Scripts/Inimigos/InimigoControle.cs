@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum SelectInimigos
 {
-    Name, Tubarao, Indio, Urubu, Urubu_Fogo, Urubu_Barril
+    Name, Tubarao, Indio, Urubu, Urubu_Fogo, Urubu_Barril, Abelha
 }
 
 public enum InimigoCombate
@@ -12,7 +12,8 @@ public enum InimigoCombate
     Name, 
     IndioParado, IndioAtacar, IndioMorrer,
     TubaraoAtacar, TubaraoNadar,
-    UrubuVoando, UrubuAtacar, UrubuMorrer
+    UrubuVoando, UrubuAtacar, UrubuMorrer,
+    AbelhaVoando, AbelhaAtacar, AbelhaMorrer
 }
 
 public class InimigoControle : MonoBehaviour
@@ -28,6 +29,7 @@ public class InimigoControle : MonoBehaviour
     // INIMIGOS
     public float jumpHead = 950f;
     public float distance;
+    public bool mover = true;
 
     // TUBARAO
     private bool shake;
@@ -65,34 +67,11 @@ public class InimigoControle : MonoBehaviour
 
     void FixedUpdate()
     {
-        // LINHA DE COMANDO QUE VERIFICA SE ESTA SELECIONADO O TUBARAO
-        if (selectInimigos == SelectInimigos.Tubarao)
-        {
-            if (Oceano.gm.oceano == true)
-            {
-                // LINHA DE COMANDO QUE FAZ O TUBARAO IR NA DIREÇAO DO PIRATA
-                transform.position = Vector2.MoveTowards(transform.position, pirata.position, TubaAtacar * Time.deltaTime);
-            }
+        TubaraoMover();
 
-            if (InimigoCombate == InimigoCombate.TubaraoAtacar)
-            {
-                rigi2d.velocity = new Vector2(0, 0);
-            }
-            else if(InimigoCombate == InimigoCombate.TubaraoNadar)
-            {
-                rigi2d.velocity = new Vector2(TubaNadar, 0);
-            }
-        }
+        UrubuMover();
 
-        if(selectInimigos == SelectInimigos.Urubu_Barril)
-        {
-            rigi2d.velocity = new Vector2(-8, 0);
-
-            if (InimigoCombate != InimigoCombate.UrubuVoando)
-            {                
-                InimigoCombate = InimigoCombate.UrubuVoando;                
-            }            
-        }
+        AbelhaMover();
     }
 
     void Inimigos()
@@ -113,6 +92,9 @@ public class InimigoControle : MonoBehaviour
                 break;
             case SelectInimigos.Tubarao:
                 Tubarao();
+                break;
+            case SelectInimigos.Abelha:
+                Abelha();
                 break;
         }
     }
@@ -149,6 +131,17 @@ public class InimigoControle : MonoBehaviour
                 break;
             case InimigoCombate.TubaraoAtacar:
                 TubaraoAtacar();
+                break;
+
+            // Abelha
+            case InimigoCombate.AbelhaVoando:
+                AbelhaVoando();
+                break;
+            case InimigoCombate.AbelhaAtacar:
+                AbelhaAtacar();
+                break;
+            case InimigoCombate.AbelhaMorrer:
+                AbelhaMorrer();
                 break;
         }
     }
@@ -202,6 +195,28 @@ public class InimigoControle : MonoBehaviour
         else
         {
             GetComponent<SpriteRenderer>().flipX = false;
+        }
+    }
+
+    void TubaraoMover()
+    {
+        // LINHA DE COMANDO QUE VERIFICA SE ESTA SELECIONADO O TUBARAO
+        if (selectInimigos == SelectInimigos.Tubarao)
+        {
+            if (Oceano.gm.oceano == true)
+            {
+                // LINHA DE COMANDO QUE FAZ O TUBARAO IR NA DIREÇAO DO PIRATA
+                transform.position = Vector2.MoveTowards(transform.position, pirata.position, TubaAtacar * Time.deltaTime);
+            }
+
+            if (InimigoCombate == InimigoCombate.TubaraoAtacar)
+            {
+                rigi2d.velocity = new Vector2(0, 0);
+            }
+            else if (InimigoCombate == InimigoCombate.TubaraoNadar)
+            {
+                rigi2d.velocity = new Vector2(TubaNadar, 0);
+            }
         }
     }
     #endregion
@@ -311,9 +326,9 @@ public class InimigoControle : MonoBehaviour
             {
                 InimigoCombate = InimigoCombate.UrubuVoando;
             }            
-        }
+        }        
 
-        if(distance > 20)
+        if (distance > 20)
         {
             Destroy(armaClone);
         }
@@ -329,6 +344,68 @@ public class InimigoControle : MonoBehaviour
             {
                 InimigoCombate = InimigoCombate.UrubuAtacar;
             }
+        }
+    }
+
+    void UrubuMover()
+    {
+        if (selectInimigos == SelectInimigos.Urubu_Barril)
+        {
+            rigi2d.velocity = new Vector2(-8, 0);
+        }
+    }
+
+    #endregion
+
+    #region Abelha
+    void Abelha()
+    {
+        distance = (transform.position.x - pirata.position.x);
+
+        if (distance < 18)
+        {
+            if (InimigoCombate != InimigoCombate.AbelhaAtacar)
+            {
+                InimigoCombate = InimigoCombate.AbelhaAtacar;
+            }
+        }
+        else if (distance > 18)
+        {
+            if (InimigoCombate != InimigoCombate.AbelhaVoando)
+            {
+                InimigoCombate = InimigoCombate.AbelhaVoando;
+            }
+        }
+    }
+
+    void AbelhaVoando()
+    {
+        anima.SetBool("Atacar", false);
+    }
+
+    void AbelhaAtacar()
+    {
+        anima.SetBool("Atacar", true);
+    }
+
+    void AbelhaMorrer()
+    {
+        anima.SetBool("Morrer", true);
+    }
+
+    void AbelhaMover()
+    {
+        if (selectInimigos == SelectInimigos.Abelha)
+        {
+            if (mover)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, pirata.position, 12 * Time.deltaTime);
+            }
+            else
+            {
+                rigi2d.velocity = new Vector2(0, 0);
+            }
+            
         }
     }
 
@@ -412,6 +489,21 @@ public class InimigoControle : MonoBehaviour
         }
 
         #endregion
+
+        #region Abelhas
+        if (selectInimigos == SelectInimigos.Abelha)
+        {
+            if (coll.CompareTag("PirataArmas"))
+            {
+                if (InimigoCombate != InimigoCombate.AbelhaMorrer)
+                {
+                    InimigoCombate = InimigoCombate.AbelhaMorrer;
+                    mover = false;
+                }
+            }
+        }
+        #endregion
+
     }
 
     // LINHA DE COMANDO QUE BALANÇA A TELA QUANDO ATIVA O DISPARO DO CANHAO
