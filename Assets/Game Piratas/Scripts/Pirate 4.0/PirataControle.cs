@@ -239,6 +239,9 @@ public class PirataControle : MonoBehaviour {
             // ZERA A GRAVIDADE
             rigi2d.gravityScale = 0;
 
+            // DESABILITAR O MOVIMENTO DO PIRATA NO EIXO X
+            this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+
             // LINHA DE COMANDO QUE FAZ COM QUE O FANTASMA VOE PARA CIMA
             rigi2d.velocity = new Vector2(0, 280 * Time.deltaTime);
 
